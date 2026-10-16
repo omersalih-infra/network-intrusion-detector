@@ -1,0 +1,149 @@
+{
+  "report_type": "fault_injection_evaluation",
+  "generated_at": "2026-07-20T20:30:49.485066+00:00",
+  "correlation_buffer_seconds": 15,
+  "total_attacks_tested": 11,
+  "attacks_detected": 1,
+  "detection_rate": 0.091,
+  "findings": [
+    {
+      "attack_type": "nmap_port_scan",
+      "source_file": "port_scan_172.16.30.10_20260718T221845Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-18T22:18:40.420343+00:00",
+      "end_time": "2026-07-18T22:18:45.050299+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "nmap_port_scan",
+      "source_file": "port_scan_172.16.30.10_20260718T222303Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-18T22:22:54.172751+00:00",
+      "end_time": "2026-07-18T22:23:03.042249+00:00",
+      "detected": true,
+      "alert_count": 4,
+      "matched_alerts": [
+        {
+          "timestamp": "2026-07-19T00:23:03.710522+0200",
+          "signature": "ET SCAN Possible Nmap User-Agent Observed",
+          "signature_id": 2024364,
+          "severity": 1,
+          "dest_port": 80
+        },
+        {
+          "timestamp": "2026-07-19T00:23:03.711222+0200",
+          "signature": "ET SCAN Possible Nmap User-Agent Observed",
+          "signature_id": 2024364,
+          "severity": 1,
+          "dest_port": 80
+        },
+        {
+          "timestamp": "2026-07-19T00:23:03.724556+0200",
+          "signature": "ET SCAN Possible Nmap User-Agent Observed",
+          "signature_id": 2024364,
+          "severity": 1,
+          "dest_port": 80
+        },
+        {
+          "timestamp": "2026-07-19T00:23:03.727789+0200",
+          "signature": "ET SCAN Possible Nmap User-Agent Observed",
+          "signature_id": 2024364,
+          "severity": 1,
+          "dest_port": 80
+        }
+      ]
+    },
+    {
+      "attack_type": "hydra_ssh_bruteforce",
+      "source_file": "ssh_bruteforce_172.16.30.10_20260718T223156Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-18T22:31:56.320174+00:00",
+      "end_time": "2026-07-18T22:31:56.700703+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "hydra_ssh_bruteforce",
+      "source_file": "ssh_bruteforce_172.16.30.10_20260718T223443Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-18T22:34:34.807367+00:00",
+      "end_time": "2026-07-18T22:34:43.833364+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "hydra_ssh_bruteforce",
+      "source_file": "ssh_bruteforce_172.16.30.10_20260720T202759Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-20T20:27:56.567540+00:00",
+      "end_time": "2026-07-20T20:27:59.790446+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "web_attack_sqli_traversal",
+      "source_file": "web_attack_172.16.30.10_20260718T224237Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-18T22:42:37.699795+00:00",
+      "end_time": "2026-07-18T22:42:37.793247+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "web_attack_sqli_traversal",
+      "source_file": "web_attack_172.16.30.10_20260719T192857Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-19T19:28:27.137968+00:00",
+      "end_time": "2026-07-19T19:28:57.945892+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "web_attack_sqli_traversal",
+      "source_file": "web_attack_172.16.30.10_20260720T202225Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-20T20:22:25.199486+00:00",
+      "end_time": "2026-07-20T20:22:25.299482+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "web_attack_sqli_traversal",
+      "source_file": "web_attack_172.16.30.10_20260720T202238Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-20T20:22:38.367287+00:00",
+      "end_time": "2026-07-20T20:22:38.456576+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "web_attack_sqli_traversal",
+      "source_file": "web_attack_172.16.30.10_20260720T202822Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-20T20:28:22.693299+00:00",
+      "end_time": "2026-07-20T20:28:22.782685+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    },
+    {
+      "attack_type": "web_attack_sqli_traversal",
+      "source_file": "web_attack_172.16.30.10_20260720T202833Z.json",
+      "target": "172.16.30.10",
+      "start_time": "2026-07-20T20:28:33.089381+00:00",
+      "end_time": "2026-07-20T20:28:33.954393+00:00",
+      "detected": false,
+      "alert_count": 0,
+      "matched_alerts": []
+    }
+  ]
+}

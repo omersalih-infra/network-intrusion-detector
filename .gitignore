@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+
+# Raw full captures / logs never go in the repo -- only curated sample_output
+suricata_eve.json
+suricata_eve.json.*.gz
+hydra_raw_output.txt
+passwords.txt
+
+# Local results not meant for publishing
+results/*
+!results/correlation_report_20260720T203049Z.json
+!results/findings_report_20260720T204253Z_corrected.md
+!results/suricata_eve_sample.json
